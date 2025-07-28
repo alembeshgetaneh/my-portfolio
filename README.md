@@ -1,84 +1,95 @@
-# my-portfolioAlembesh Getaneh - Personal Portfolio Website
+# Alembesh Getaneh - Personal Portfolio Website
 
-Overview
+## Overview
+
 This is my Personal Portfolio Website designed to showcase my skills, background, projects, and professional profile as a junior software developer and creative web designer. The portfolio focuses on clear, modern design with responsive layouts and smooth navigation to deliver a great user experience on desktops and mobile devices.
 
-Live Demo
-View Live Site
-(Replace this URL with your deployed live site URL)
+## Live Demo
 
-Features
-About Me: Introduction, educational background, and professional experience.
+[View Live Site](https://alembeshportfolio.netlify.app)
 
-Interests: Highlights passions such as web development, technology innovations, lifelong learning, and agricultural technology.
+## Features
 
-Skills & Technologies: Display of programming languages, frameworks, databases, and tools, enhanced with icons.
+- **About Me:** Introduction, educational background, and professional experience.
+- **Interests:** Highlights passions such as web development, technology innovations, lifelong learning, and agricultural technology.
+- **Skills & Technologies:** Display of programming languages, frameworks, databases, and tools, enhanced with icons.
+- **Projects:** Detailed project cards including "Farm Management System" and the Portfolio Website with description and technical stack.
+- **Contact:** Easy-to-use contact form allowing visitors to send messages.
+- **Downloadable CV:** Direct link to download my resume.
+- Responsive design optimized for all screen sizes.
+- Smooth animated role text to highlight multiple professional skills dynamically.
+- Semantic HTML and accessible ARIA-friendly structure.
 
-Projects: Detailed project cards including "Farm Management System" and the Portfolio Website with description and technical stack.
+## Technologies Used
 
-Contact: Easy-to-use contact form allowing visitors to send messages.
+- HTML5 for markup
+- CSS3 including Flexbox and CSS Grid for layout and responsiveness
+- Font Awesome for icons
+- Google Fonts (Poppins, Pacifico)
+- Pure HTML and CSS modal popups using the `:target` pseudo-class — no JavaScript needed
+- Responsive design implemented via media queries
 
-Downloadable CV: Direct link to download my resume.
+## Project Structure
 
-Responsive design optimized for all screen sizes.
-
-Smooth animated role text to highlight multiple professional skills dynamically.
-
-Semantic HTML and accessible ARIA-friendly structure.
-
-Technologies Used
-HTML5 for markup
-
-CSS3 including Flexbox and CSS Grid for layout and responsiveness
-
-Font Awesome for icons
-
-Google Fonts (Poppins, Pacifico)
-
-Pure HTML and CSS modal popups using the :target pseudo-class — no JavaScript needed
-
-Responsive design implemented via media queries
-
-Project Structure
-text
 /my-portfolio-website
 │
-├── index.html               # Main portfolio page
-├── style.css                # CSS stylesheet
-├── images/                  # Images (profile photo, project screenshots)
-├── ALEMBESH GETANEH.pdf     # Downloadable CV file
-└── README.md                # This file
+├── index.html # Main portfolio page
+├── style.css # CSS stylesheet
+├── images/ # Images (profile photo, project screenshots)
+├── ALEMBESH GETANEH.pdf # Downloadable CV file
+└── README.md # This file
 
 
-Setup & Usage
-Clone the repository:
 
-bash
-git clone https://github.com/your-username/portfolio.git
-cd portfolio
-View locally:
+## Setup & Usage
 
-Open index.html in any modern web browser to test and browse your portfolio offline.
+### Clone the repository:
 
-Deploy live (example with Netlify):
+```bash
+git clone https://github.com/alembeshgetaneh/my-portfolio.git
+cd my-portfolio
+    
+    View Locally
+To view the portfolio website on your own computer:
 
-Push code to GitHub.
+1. Clone the repository to your local machine:
 
-Connect your GitHub repo with Netlify for automatic hosting.
+git clone https://github.com/alembeshgetaneh/my-portfolio.git
 
-Alternatively, you can host using GitHub Pages by enabling it in your repository settings.
+2.Navigate into the project folder:
 
-Update content:
+cd my-portfolio
 
-Modify HTML and CSS files as desired to personalize or improve your portfolio.
+3.Open the index.html file in any modern web browser (Chrome, Firefox, Edge, etc.) to browse the portfolio offline.
 
-Commit and push updates to keep your live site current.
+    Deploy Live (Using Netlify)
+Your portfolio is deployed and accessible online at:
+https://alembeshportofolio.netlify.app
+
+To update the live site after making changes:
+
+Push your updates to the GitHub repository.
+
+Netlify will automatically detect the changes and update the live site.
+
+    Update Content
+To update your portfolio:
+
+Modify the HTML, CSS, or images as needed in your project files.
+
+Commit the changes with a meaningful message:
+
+git add .
+git commit -m "Update portfolio content"
+git push origin main
+After pushing, your live site will update automatically through Netlify.
 
 Screenshots
-(Add screenshots of your portfolio homepage, project section, or contact form here for quick visual reference)
+![Portfolio Homepage](images/images/portifolio_screenshoot.png)
+
 
 Contact
-GitHub: github.com/alem171291
+GitHub: github.com/alembeshgetaneh
 
 LinkedIn: linkedin.com/in/alembesh-getaneh-586789271
 
