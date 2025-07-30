@@ -99,16 +99,17 @@ header nav a {
 
 header {
     padding: 10px 0;
-    height: 80px;
   }
   header nav {
     margin-top: 10px;
-    background-color: #19151d;
+   
   }
 
   header nav a {
     display: inline-block;
     margin: 8px 3px;
+    color: #eaf5ea;
+    font-size: 8px;
   }
 
    .collaborate-message {
@@ -120,7 +121,7 @@ header {
 @media (max-width: 500px) {
   header nav a {
     display: inline-block;
-    margin: 0 5px;
+    font-size: 8px;
   }
 }
 
@@ -153,7 +154,7 @@ header nav a:hover::after {
 .collaborate-message {
   font-family: 'Pacifico', cursive;
   font-size: 1.8rem;
-  font-weight: 600;
+  font-weight: 600px;
   background: linear-gradient(900deg, #6dddd4, #05c54f 70%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -218,13 +219,12 @@ h1 {
     position: fixed;
     margin: 20px auto;
     left: 40%;
-    top: 50px;;
+    top: 70px;;
     max-width: 90%;
     transform: none;
-    background-color: rgb(9, 30, 37);
     white-space: normal;
     font-size: 1rem;
-    padding: 10px;
+    padding: 2px;
     border-width: 4px;
     border-radius: 20px;
 
@@ -234,6 +234,12 @@ h1 {
      margin: 20px auto;
       margin-top: 450px;
     }
+  }
+
+  .collaborate-message {
+    font-size: 1.0rem;
+   padding: 5px;
+   font-weight: 600px;
   }
 
   header {
@@ -903,6 +909,7 @@ footer {
   .footer-container {
     flex-direction: column;
     text-align: center;
+     font-size: 0.8rem;
   }
 
   .footer-nav {
