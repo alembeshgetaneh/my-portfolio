@@ -61,6 +61,16 @@ header .logo {
 
 header nav {
   text-align: right;
+
+}
+
+
+header nav ul {
+  display: flex;            /* Arrange li elements horizontally */
+  list-style: none;         /* Remove bullet points */
+  margin: 0;
+  padding: 0;
+  left: 50%;
 }
 
 header .container {
@@ -84,46 +94,95 @@ header nav a {
 }
 
 
-@media (max-width: 768px) {
-  header .container {
-    flex-direction: row;
-    text-align: center;
-    gap: 5px;
-    font-size: 0.2rem;
-  }
-
-  html {
-    scroll-padding-top: 80px;
-  }
-
-
-header {
-    padding: 10px 0;
-  }
-  header nav {
-    margin-top: 10px;
-   
-  }
-
-  header nav a {
-    display: inline-block;
-    margin: 8px 3px;
-    color: #eaf5ea;
-    font-size: 8px;
-  }
-
-   .collaborate-message {
-    font-size: 0.8rem;
-    margin-top: 0 5px;
-  }
+/* Hamburger toggle - hidden on desktop */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 110;
+}
+/* Hide checkbox */
+.nav-toggle {
+  display: none;
 }
 
+
+.hamburger {
+  display: none; /* hide by default on desktop */
+}
+
+
+/* Default nav hidden on small screens */
 @media (max-width: 500px) {
-  header nav a {
-    display: inline-block;
-    font-size: 8px;
+  nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+   width: auto; 
+    background-color: transparent; 
+    border-radius: 8px;
+    padding: 0.5rem 1rem; 
+  }
+
+
+   .logo {
+    font-size: 24px;  /* Increase size from default (adjust as needed) */
+  }
+
+  .collaborate-message {
+    font-size: 1.2rem;   /* Increase size for better readability */
+    padding: 0.3rem 0;   /* Optional: add some vertical spacing */
+  }
+
+   .nav-toggle:checked ~ nav {
+    display: block;
+     background-color: rgba(42, 36, 51, 0.85);
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+    padding-left: 10px;
+    margin: 0;
+    text-align: center;       /* center text */
+    align-items: center;  
+    
+  }
+
+  /* Hamburger icon */
+  .hamburger {
+    display: block;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+  }
+
+  /* Show menu when checkbox is checked */
+  .nav-toggle:checked ~ nav {
+    display: block;
+  }
+
+  .logo {
+    font-size: 1.8rem;   /* Increase size from default (adjust as needed) */
+  }
+
+  .collaborate-message {
+    font-size: 1.2rem;   /* Increase size for better readability */
+    padding: 0.3rem 0;   /* Optional: add some vertical spacing */
   }
 }
+
+
+
 
 
 header nav a:focus,
@@ -131,7 +190,6 @@ header nav a:hover {
   color: var(--primary-color);
   outline: none;
 }
-
 
 
 header nav a::after {
@@ -149,7 +207,6 @@ header nav a::after {
 header nav a:hover::after {
   transform: scaleX(1);
 }
-
 
 .collaborate-message {
   font-family: 'Pacifico', cursive;
@@ -247,6 +304,7 @@ h1 {
     font-size: 1.0rem;
    padding: 5px;
    font-weight: 600px;
+font-family: 'Pacifico', cursive;
   }
 
   header {
@@ -869,7 +927,7 @@ footer {
   background: #19151d;
   color: #f0f0f0;
   padding: 20px 10%;
-  font-size: 0.9rem;
+  font-size: 1.0rem;
   box-shadow: 0 -4px 10px rgba(74, 44, 111, 0.4);
   margin-top: 60px;
 }
@@ -885,41 +943,10 @@ footer {
   gap: 20px;
 }
 
-
-.footer-nav {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-
-.footer-nav a {
-  color: #f0f0f0;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.9rem;
-  transition: color 0.3s ease;
-}
-
-.footer-nav a:hover {
-  color: var(--primary-color);
-}
-
-
-
 @media (max-width: 600px) {
   .footer-container {
     flex-direction: column;
     text-align: center;
-     font-size: 0.8rem;
-  }
-
-  .footer-nav {
-    flex-direction: row;
-    gap: 15px;
-    justify-content: center;
-  }
-  .footer-nav a{
-    font-size: 9px;
+     font-size: 1.0rem;
   }
 }

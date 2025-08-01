@@ -2,38 +2,67 @@
 <html lang="en">
 
 <head>
+    <!-- Character encoding for correct text rendering -->
     <meta charset="UTF-8">
+
+    <!-- Responsive viewport for mobile scaling -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title shown in browser tab -->
     <title>Alembesh Getaneh</title>
+
+    <!-- Link to external stylesheet -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome icons CDN for social/media icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Importing 'Poppins' and 'Pacifico' fonts from Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
+
+    <!-- Header section containing site title, tagline, navigation -->
     <header>
         <div class="container">
+
+            <!-- Main site title/logo -->
             <h1 class="logo">Welcome</h1>
+
+            <!-- Tagline or motivational message -->
             <div class="collaborate-message">Ready to Build Together?</div>
 
-            <nav>
-                <a href="#home" class="active" aria-current="page">Home</a>
-                <a href="#about">About</a>
-                <a href="#interests">My interests</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#contacts">Contact me</a>
-            </nav>
-        </div>
+            <!-- Hidden checkbox used to toggle the mobile navigation menu -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" />
 
+            <!-- Hamburger menu icon as label to toggle checkbox -->
+            <label for="nav-toggle" class="hamburger">
+                <i class="fas fa-bars"></i> <!-- Font Awesome bars icon -->
+            </label>
+
+            <!-- Navigation menu -->
+            <nav>
+                <ul>
+                    <!-- Navigation links with section anchors and active class for current page -->
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#interests">My interests</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contacts">Contact me</a></li>
+                </ul>
+            </nav>
+
+        </div>
     </header>
 
-
-
+    <!-- Animated roles or professions cycling in the UI -->
     <span class="animated-text">
         <span class="role">Cameraman</span>
         <span class="role">Graphics designer</span>
@@ -42,44 +71,55 @@
         <span class="role">Junior Web Developer</span>
     </span>
 
-
+    <!-- About section / Home introduction -->
     <section id="home" class="about-section">
         <div class="about-container">
+
+            <!-- Text block introducing yourself -->
             <div class="about-text">
                 <h2>Hello, I’m Alembesh Getaneh, </h2>
                 <p>
-
                     a junior software developer and creative web designer passionate about building functional,
                     visually appealing digital experiences. I enjoy turning ideas into reality with clean, modern code
                     and intuitive design.
                 </p>
 
+                <!-- Social media links -->
                 <div class="about-actions">
                     <div class="social-links">
-                        <a class="github" href="https://github.com/alembeshgetaneh" target="_blank"><i
-                                class="fab fa-github"></i></a>
-                        <a class="linkedin" href="https://linkedin.com/in/alembesh-getaneh-586789271" target="_blank"><i
-                                class="fab fa-linkedin"></i></a>
-                        <a class="telegram" href="https://t.me/Alembesh" target="_blank"><i
-                                class="fab fa-telegram"></i></a>
-                        <a class="whatsapp" href="https://wa.me/251928765032" target="_blank"><i
-                                class="fab fa-whatsapp"></i></a>
+                        <a class="github" href="https://github.com/alembeshgetaneh" target="_blank">
+                            <i class="fab fa-github"></i> <!-- GitHub icon -->
+                        </a>
+                        <a class="linkedin" href="https://linkedin.com/in/alembesh-getaneh-586789271" target="_blank">
+                            <i class="fab fa-linkedin"></i> <!-- LinkedIn icon -->
+                        </a>
+                        <a class="telegram" href="https://t.me/Alembesh" target="_blank">
+                            <i class="fab fa-telegram"></i> <!-- Telegram icon -->
+                        </a>
+                        <a class="whatsapp" href="https://wa.me/251928765032" target="_blank">
+                            <i class="fab fa-whatsapp"></i> <!-- WhatsApp icon -->
+                        </a>
                     </div>
                 </div>
             </div>
+
+            <!-- About photo section with personal image -->
             <div class="about-photo">
                 <img src="images/alembesh.jpg" alt="Alembesh Photo">
             </div>
         </div>
     </section>
 
-
+    <!-- About me section with education and background -->
     <section id="about" class="education-section">
         <div class="container">
             <h2>About me</h2>
+
+            <!-- Education details and background description -->
             <div class="education-details">
                 <div class="education-item">
-                    <p>I graduated from Hawassa University with a Bachelor of Science in Computer Science. I have over a
+                    <p>
+                        I graduated from Hawassa University with a Bachelor of Science in Computer Science. I have over a
                         year of experience in photo editing and camerawork, creating high-quality visuals and graphic
                         designs.
 
@@ -96,7 +136,7 @@
                 </div>
             </div>
 
-
+            <!-- Interests listing -->
             <div id="interests" class="interests-block">
                 <h3>My interests</h3>
                 <ul class="interests-list">
@@ -111,8 +151,11 @@
                 </ul>
             </div>
 
+            <!-- Skills and Technologies section -->
             <div id="skills" class="education-item skills-grid">
                 <h3>Skills & Technologies</h3>
+
+                <!-- Languages known -->
                 <section id="skill1" class="skills-grid">
                     <h4>Languages</h4>
                     <div class="skills">
@@ -121,44 +164,38 @@
                                 alt="HTML5" />
                             <span>HTML</span>
                         </div>
-
                         <div class="skill-item">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
                                 alt="CSS3" />
                             <span>CSS</span>
                         </div>
-
                         <div class="skill-item">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
                                 alt="JavaScript" />
                             <span>JavaScript</span>
                         </div>
-
                         <div class="skill-item">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
                                 alt="Python" />
                             <span>Python</span>
                         </div>
-
                         <div class="skill-item">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
                                 alt="Java" />
                             <span>Java</span>
                         </div>
-
                         <div class="skill-item">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
                                 alt="C++" />
                             <span>C++</span>
                         </div>
-
                     </div>
 
+                    <!-- Frameworks and Databases -->
                     <h4>Frameworks & Databases</h4>
                     <div class="skills">
                         <div class="skill-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
-                                alt="Django" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django" />
                             <span>Django</span>
                         </div>
                         <div class="skill-item">
@@ -167,27 +204,24 @@
                             <span>Bootstrap</span>
                         </div>
                         <div class="skill-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-                                alt="MySQL" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" />
                             <span>MySQL</span>
                         </div>
                     </div>
 
+                    <!-- Tools and other technologies -->
                     <h4>Tools & Other Technologies</h4>
                     <div class="skills">
                         <div class="skill-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
-                                alt="Git" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
                             <span>Git</span>
                         </div>
                         <div class="skill-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
-                                alt="VS Code" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" />
                             <span>VS Code</span>
                         </div>
                         <div class="skill-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg"
-                                alt="Jira" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" alt="Jira" />
                             <span>Jira</span>
                         </div>
                         <div class="skill-item">
@@ -196,8 +230,7 @@
                             <span>Adobe Photoshop</span>
                         </div>
                         <div class="skill-item">
-                            <img src="https://img.icons8.com/color/48/microsoft-office-2019.png"
-                                alt="Microsoft Office" />
+                            <img src="https://img.icons8.com/color/48/microsoft-office-2019.png" alt="Microsoft Office" />
                             <span>Microsoft Office</span>
                         </div>
                         <div class="skill-item">
@@ -207,62 +240,71 @@
                         </div>
                     </div>
                 </section>
+            </div>
+        </div>
     </section>
 
-
-
+    <!-- Projects showcase section -->
     <section id="projects" class="projects-section">
         <h3>My Projects</h3>
         <div class="projects-grid">
+
+            <!-- Individual project card -->
             <div class="project-card">
                 <img src="images/sacco_screenshoot.png" alt="Screenshot of Farm Management System dashboard">
                 <h3> SACCO Website Project</h3>
-                A responsive, user-friendly website designed for a Savings and Credit Cooperative Organization (SACCO).
-                The site features clear navigation, service highlights including savings accounts and loan products,
-                membership information, community testimonials, and latest news updates. Built with HTML, CSS, and
-                JavaScript,
-                the project aims to empower cooperative members by providing easy access to essential financial services
-                and information online.
+                <p>
+                    A responsive, user-friendly website designed for a Savings and Credit Cooperative Organization (SACCO).
+                    The site features clear navigation, service highlights including savings accounts and loan products,
+                    membership information, community testimonials, and latest news updates. Built with HTML, CSS, and
+                    JavaScript,
+                    the project aims to empower cooperative members by providing easy access to essential financial services
+                    and information online.
+                </p>
                 <div class="tech-icons">
-                    <i class="fab fa-html5"></i>
-                    <i class="fab fa-css3-alt"></i>
-                    <i class="fab fa-js"></i>
-                    <i class="fab fa-python"></i>
-
+                    <i class="fab fa-html5"></i> <!-- HTML5 icon -->
+                    <i class="fab fa-css3-alt"></i> <!-- CSS3 icon -->
+                    <i class="fab fa-js"></i> <!-- JavaScript icon -->
+                    <i class="fab fa-python"></i> <!-- Python icon -->
                 </div>
                 <a href="#detail1" class="view-link">View Detail</a>
             </div>
 
+            <!-- Another project card -->
             <div class="project-card">
                 <img src="images/portifolio_screenshoot.png" alt="Portrait of Alembesh Getaneh">
                 <h3>Personal Portfolio Website</h3>
-                <p>A clean and responsive portfolio website built with modern HTML and CSS to showcase my skills,
+                <p>
+                    A clean and responsive portfolio website built with modern HTML and CSS to showcase my skills,
                     projects and professional background.
                 </p>
-                <div class="tech-icons">   
-                    <i class="fab fa-html5"></i>
- 
-                    <i class="fab fa-css3-alt"></i>
+                <div class="tech-icons">
+                    <i class="fab fa-html5"></i> <!-- HTML5 icon -->
+                    <i class="fab fa-css3-alt"></i> <!-- CSS3 icon -->
                 </div>
                 <a href="#detail2" class="view-link">View Detail</a>
             </div>
 
+        </div>
     </section>
 
-
-
+    <!-- Contact section -->
     <section id="contacts" class="contact-section">
-        <h3>contact me</h3>
+        <h3>Contact me</h3>
         <div class="contact-container">
+
+            <!-- Left column with contact info and CV download -->
             <div class="left-column">
                 <div class="contact-info">
                     <p><strong>Phone:</strong> +251928765032/251707010933</p>
                     <p><strong>Email:</strong> alembeshgetaneh@gmail.com</p>
-                    <p><strong>Address:</strong>Addis Ababa, Ethiopia</p>
+                    <p><strong>Address:</strong> Addis Ababa, Ethiopia</p>
                 </div>
+                <!-- Downloadable CV link -->
                 <a href="ALEMBESH GETANEH.pdf" download class="download-cv-btn">Download my CV</a>
             </div>
 
+            <!-- Contact form -->
             <form action="#" method="POST" class="contact-form">
                 <div class="form-group">
                     <label for="name">Name</label>
@@ -279,45 +321,43 @@
                     <textarea id="message" name="message" rows="5" placeholder="Your message here..."
                         required></textarea>
                 </div>
+
+                <!-- Submit button -->
                 <button type="submit" class="contact-btn">Send Message</button>
             </form>
 
         </div>
-
     </section>
 
-
-
+    <!-- Footer section -->
     <footer>
         <div class="container footer-container">
 
+            <!-- Copyright information -->
             <div class="footer-left">
                 <p>&copy; 2025 All rights reserved.</p>
             </div>
 
-            <nav class="footer-nav">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#contacts">Contact me</a>
-            </nav>
-
+            <!-- Social media follow links -->
             <div class="social-links">
                 <div>
                     <h3>follow me</h3>
                 </div>
-                <a class="github" href="https://github.com/alembeshgetaneh" target="_blank"><i
-                        class="fab fa-github"></i></a>
-                <a class="linkedin" href="https://linkedin.com/in/alembesh-getaneh-586789271" target="_blank"><i
-                        class="fab fa-linkedin"></i></a>
-                <a class="telegram" href="https://t.me/Alembesh" target="_blank"><i class="fab fa-telegram"></i></a>
-                <a class="whatsapp" href="https://wa.me/251928765032" target="_blank"><i
-                        class="fab fa-whatsapp"></i></a>
+                <a class="github" href="https://github.com/alembeshgetaneh" target="_blank">
+                    <i class="fab fa-github"></i> <!-- GitHub icon -->
+                </a>
+                <a class="linkedin" href="https://linkedin.com/in/alembesh-getaneh-586789271" target="_blank">
+                    <i class="fab fa-linkedin"></i> <!-- LinkedIn icon -->
+                </a>
+                <a class="telegram" href="https://t.me/Alembesh" target="_blank">
+                    <i class="fab fa-telegram"></i> <!-- Telegram icon -->
+                </a>
+                <a class="whatsapp" href="https://wa.me/251928765032" target="_blank">
+                    <i class="fab fa-whatsapp"></i> <!-- WhatsApp icon -->
+                </a>
             </div>
         </div>
     </footer>
 
-
-
 </body>
+</html>
