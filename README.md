@@ -85,7 +85,7 @@ git push origin main
 After pushing, your live site will update automatically through Netlify.
 
 Screenshots
-![Portfolio Homepage](images/images/portifolio_screenshoot.png)
+![Portfolio Homepage](/images/portifolio_screenshoot.png)
 
 
 Contact
