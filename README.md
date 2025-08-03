@@ -13,7 +13,7 @@ This is my Personal Portfolio Website designed to showcase my skills, background
 - **About Me:** Introduction, educational background, and professional experience.
 - **Interests:** Highlights passions such as web development, technology innovations, lifelong learning, and agricultural technology.
 - **Skills & Technologies:** Display of programming languages, frameworks, databases, and tools, enhanced with icons.
-- **Projects:** Detailed project cards including "Farm Management System" and the Portfolio Website with description and technical stack.
+- **Projects:** Detailed project cards including "SACCO website" and the Portfolio Website with description and technical stack.
 - **Contact:** Easy-to-use contact form allowing visitors to send messages.
 - **Downloadable CV:** Direct link to download my resume.
 - Responsive design optimized for all screen sizes.
