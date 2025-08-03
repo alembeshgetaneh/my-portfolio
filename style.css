@@ -726,10 +726,18 @@ h1 {
 .tech-icons i.fa-js       { color: #F7DF1E; }
 .tech-icons i.fa-python   { color: #3776AB; }
 
+/* Project buttons container */
+.project-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 6px;
+}
+
 /* View project link button */
 .project-card .view-link {
   display: inline-block;
-  margin: 6px 8px 0 8px;
+  margin: 0;
   padding: 6px 16px;
   color: #fff;
   background: linear-gradient(to right, #ff7a18, var(--secondary-color) 70%);
@@ -737,6 +745,8 @@ h1 {
   font-weight: 500;
   text-decoration: none;
   transition: background 0.3s, transform 0.3s;
+  flex: 1;
+  text-align: center;
 }
 
 /* Hover effect for view link */
